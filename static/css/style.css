@@ -38,10 +38,35 @@ body{
 }
 
 .posts li{
+    position: relative;
     display: flex;
     border-bottom: 1px solid #ccc;
     padding: 17px;
 }
+
+.posts li .menu_icon {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.posts li .menu {
+    display: none;
+    position:absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.posts li .menu a {
+    text-decoration: none;
+}
+
 
 .posts li .logo{
     flex-basis: 15%;
